@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mry-nk-D4P">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Transition-->
+        <scene sceneID="bbQ-7A-Msx">
+            <objects>
+                <viewController id="mry-nk-D4P" customClass="ViewTransitionViewController" customModule="TransitionStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gQD-ij-BVR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NTc-X1-S2H">
+                                <rect key="frame" x="67" y="180.5" width="280" height="535"/>
+                                <subviews>
+                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u5w-gV-adY">
+                                        <rect key="frame" x="20" y="20" width="240" height="495"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFv-Fg-b7I">
+                                                <rect key="frame" x="111" y="229" width="18" height="36"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nl8-FO-0NE">
+                                        <rect key="frame" x="20" y="20" width="240" height="495"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6IF-fJ-LSz">
+                                                <rect key="frame" x="113" y="229" width="14" height="36"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="535" id="l3W-wp-cJ4"/>
+                                    <constraint firstAttribute="width" constant="280" id="xYT-sy-LoC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="NTc-X1-S2H" firstAttribute="centerX" secondItem="gQD-ij-BVR" secondAttribute="centerX" id="6Kd-W7-Rxq"/>
+                            <constraint firstItem="NTc-X1-S2H" firstAttribute="centerY" secondItem="gQD-ij-BVR" secondAttribute="centerY" id="OBO-x4-AY2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tTH-Jj-wdf"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="View Transition" id="sDk-K8-CsC">
+                        <barButtonItem key="leftBarButtonItem" title="Action2" id="AJG-oX-NCP">
+                            <connections>
+                                <action selector="startTransition2:" destination="mry-nk-D4P" id="k0n-Y8-2Xx"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Action1" id="7Un-OX-tus">
+                            <connections>
+                                <action selector="startTransition1:" destination="mry-nk-D4P" id="COm-LI-l0i"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="blueView" destination="u5w-gV-adY" id="PeI-A1-asF"/>
+                        <outlet property="containerView" destination="NTc-X1-S2H" id="5yp-Ir-VSw"/>
+                        <outlet property="redView" destination="Nl8-FO-0NE" id="Hxa-4S-ZOP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ApE-2u-XVg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+</document>
