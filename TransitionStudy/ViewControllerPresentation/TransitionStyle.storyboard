@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kPr-Wi-ZM4">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Transition Style View Controller-->
+        <scene sceneID="cp3-CW-ksR">
+            <objects>
+                <viewController id="kPr-Wi-ZM4" customClass="TransitionStyleViewController" customModule="TransitionStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ULh-1V-4Ya">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="iZg-1O-Vh8">
+                                <rect key="frame" x="63.5" y="341" width="287" height="214.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Present" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M51-gl-C9y">
+                                        <rect key="frame" x="58" y="0.0" width="171" height="63.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="53"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="QiH-6p-GhL">
+                                        <rect key="frame" x="0.0" y="108.5" width="287" height="32"/>
+                                        <segments>
+                                            <segment title="Cover"/>
+                                            <segment title="Flip"/>
+                                            <segment title="Dissolve"/>
+                                            <segment title="Curl"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="styleChanged:" destination="kPr-Wi-ZM4" eventType="valueChanged" id="dXw-V9-Pro"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="9R8-jh-rIm">
+                                        <rect key="frame" x="81" y="184.5" width="125" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rH-zE-sMg">
+                                                <rect key="frame" x="0.0" y="0.0" width="37" height="30"/>
+                                                <state key="normal" title="Code"/>
+                                                <connections>
+                                                    <action selector="present:" destination="kPr-Wi-ZM4" eventType="touchUpInside" id="v5r-t3-eyV"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwh-qA-orU">
+                                                <rect key="frame" x="81" y="0.0" width="44" height="30"/>
+                                                <state key="normal" title="Segue"/>
+                                                <connections>
+                                                    <segue destination="jVA-7e-ddN" kind="presentation" id="DMG-ag-f7r"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="iZg-1O-Vh8" firstAttribute="centerX" secondItem="ULh-1V-4Ya" secondAttribute="centerX" id="eoB-Bm-VxM"/>
+                            <constraint firstItem="iZg-1O-Vh8" firstAttribute="centerY" secondItem="ULh-1V-4Ya" secondAttribute="centerY" id="pqG-7b-OlC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PmH-Th-ijw"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3NA-Jw-Ku9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="302.89855072463769" y="-230.35714285714283"/>
+        </scene>
+        <!--ModalViewController-->
+        <scene sceneID="J88-wt-ARO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Presentation" referencedIdentifier="ModalViewController" id="jVA-7e-ddN" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="IcG-T0-BOZ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7dE-zC-yKh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="943" y="-221"/>
+        </scene>
+    </scenes>
+</document>
