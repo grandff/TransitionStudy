@@ -16,6 +16,9 @@
 		1B2E71B72421CDFB0034F4A1 /* TransitionStyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2E71B62421CDFB0034F4A1 /* TransitionStyleViewController.swift */; };
 		1B2E71B92421D0CD0034F4A1 /* PresentationStyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2E71B82421D0CD0034F4A1 /* PresentationStyleViewController.swift */; };
 		1B2E71BB2421D39A0034F4A1 /* PresentationContextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2E71BA2421D39A0034F4A1 /* PresentationContextViewController.swift */; };
+		1B2E71C12424696E0034F4A1 /* CustomPresentation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B2E71C02424696E0034F4A1 /* CustomPresentation.storyboard */; };
+		1B2E71C3242469D30034F4A1 /* CustomPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2E71C2242469D30034F4A1 /* CustomPresentationViewController.swift */; };
+		1B2E71C524246B360034F4A1 /* SimplePresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2E71C424246B360034F4A1 /* SimplePresentationController.swift */; };
 		1B857F1C241FAD5600FE41CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B857F1B241FAD5600FE41CB /* AppDelegate.swift */; };
 		1B857F1E241FAD5600FE41CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B857F1D241FAD5600FE41CB /* SceneDelegate.swift */; };
 		1B857F20241FAD5600FE41CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B857F1F241FAD5600FE41CB /* ViewController.swift */; };
@@ -36,6 +39,9 @@
 		1B2E71B62421CDFB0034F4A1 /* TransitionStyleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionStyleViewController.swift; sourceTree = "<group>"; };
 		1B2E71B82421D0CD0034F4A1 /* PresentationStyleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationStyleViewController.swift; sourceTree = "<group>"; };
 		1B2E71BA2421D39A0034F4A1 /* PresentationContextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationContextViewController.swift; sourceTree = "<group>"; };
+		1B2E71C02424696E0034F4A1 /* CustomPresentation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomPresentation.storyboard; sourceTree = "<group>"; };
+		1B2E71C2242469D30034F4A1 /* CustomPresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPresentationViewController.swift; sourceTree = "<group>"; };
+		1B2E71C424246B360034F4A1 /* SimplePresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePresentationController.swift; sourceTree = "<group>"; };
 		1B857F18241FAD5600FE41CB /* TransitionStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransitionStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B857F1B241FAD5600FE41CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B857F1D241FAD5600FE41CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +81,24 @@
 			path = ViewControllerPresentation;
 			sourceTree = "<group>";
 		};
+		1B2E71BE242469570034F4A1 /* Customizing */ = {
+			isa = PBXGroup;
+			children = (
+				1B2E71BF242469600034F4A1 /* CustomPresentation */,
+			);
+			path = Customizing;
+			sourceTree = "<group>";
+		};
+		1B2E71BF242469600034F4A1 /* CustomPresentation */ = {
+			isa = PBXGroup;
+			children = (
+				1B2E71C02424696E0034F4A1 /* CustomPresentation.storyboard */,
+				1B2E71C2242469D30034F4A1 /* CustomPresentationViewController.swift */,
+				1B2E71C424246B360034F4A1 /* SimplePresentationController.swift */,
+			);
+			path = CustomPresentation;
+			sourceTree = "<group>";
+		};
 		1B857F0F241FAD5600FE41CB = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +118,7 @@
 		1B857F1A241FAD5600FE41CB /* TransitionStudy */ = {
 			isa = PBXGroup;
 			children = (
+				1B2E71BE242469570034F4A1 /* Customizing */,
 				1B2E71A92421C8900034F4A1 /* ViewControllerPresentation */,
 				1B857F2F241FADC100FE41CB /* ViewTransition */,
 				1B857F1B241FAD5600FE41CB /* AppDelegate.swift */,
@@ -179,6 +204,7 @@
 				1B2E71AB2421C8A50034F4A1 /* Presentation.storyboard in Resources */,
 				1B857F25241FAD5700FE41CB /* Assets.xcassets in Resources */,
 				1B857F31241FAE4300FE41CB /* ViewTransition.storyboard in Resources */,
+				1B2E71C12424696E0034F4A1 /* CustomPresentation.storyboard in Resources */,
 				1B857F23241FAD5600FE41CB /* Main.storyboard in Resources */,
 				1B2E71B12421C8CB0034F4A1 /* PresentationContext.storyboard in Resources */,
 				1B2E71AF2421C8BC0034F4A1 /* TransitionStyle.storyboard in Resources */,
@@ -193,10 +219,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B857F20241FAD5600FE41CB /* ViewController.swift in Sources */,
+				1B2E71C524246B360034F4A1 /* SimplePresentationController.swift in Sources */,
 				1B2E71B32421C94D0034F4A1 /* ModalViewController.swift in Sources */,
 				1B857F1C241FAD5600FE41CB /* AppDelegate.swift in Sources */,
 				1B857F33241FAE5100FE41CB /* ViewTransitionViewController.swift in Sources */,
 				1B2E71BB2421D39A0034F4A1 /* PresentationContextViewController.swift in Sources */,
+				1B2E71C3242469D30034F4A1 /* CustomPresentationViewController.swift in Sources */,
 				1B2E71B92421D0CD0034F4A1 /* PresentationStyleViewController.swift in Sources */,
 				1B2E71B72421CDFB0034F4A1 /* TransitionStyleViewController.swift in Sources */,
 				1B2E71B52421C9590034F4A1 /* PresentationViewController.swift in Sources */,
